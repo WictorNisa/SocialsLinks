@@ -111,7 +111,7 @@ button:active {
 
 /* *************** MEDIA QUERIES *************** */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1440px) {
   .main-section {
     width: 35%;
     height: 80%;
