@@ -1,0 +1,130 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* ## Colors */
+:root {
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background-section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Grey900);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  display: flex;
+  width: 85%;
+  height: 90%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--Grey800);
+}
+
+.hero-avatar {
+  display: block;
+  width: 30%;
+  border-radius: 50%;
+  margin: 2em auto auto auto;
+}
+
+.user-name {
+  color: var(--White);
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 1em auto 0.5em auto;
+}
+
+.user-location {
+  color: var(--Green);
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  margin: auto;
+}
+
+.user-desc {
+  color: var(--White);
+  text-align: center;
+  letter-spacing: 0.1px;
+  font-weight: lighter;
+}
+
+.main-button-div {
+  margin: 2em auto auto auto;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  border: none;
+  background-color: var(--Grey700);
+  height: 45px;
+  border-radius: 5px;
+}
+
+button a {
+  color: var(--White);
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  font-weight: bolder;
+  width: 100%;
+  display: block;
+}
+
+button:active {
+  background-color: var(--Green);
+  color: var(--Grey900);
+}
+
+/* *************** MEDIA QUERIES *************** */
+
+@media only screen and (min-width: 1000px) {
+  .main-section {
+    width: 35%;
+    height: 80%;
+  }
+
+  button:hover {
+    background-color: var(--Green);
+    color: black;
+    transform: scale(1.1);
+    transition: .5s ease;
+  }
+
+  button a:hover{
+    color: black;
+  }
+}
